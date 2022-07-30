@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stroke Prediction| Register</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-------awsome-font-icon-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="navbar-section">
+    <nav class="navbar bg-dark">
+      <div class="container-fluid">
+        <a href="index" class="navbar-brand" style="color: white; font-size:2rem;">Stroke Prediction</a>
+        <div>
+          <a href="login" class="navbar-brand" style="color: white; font-size:1.2rem;">Login</a>
+          <a href="register" class="navbar-brand" style="color: white; font-size:1.2rem;">Register</a>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <section class="register" style="margin: 5rem 0; ">
+    <div class="container">
+          <div class="card" style="border-radius:2rem; background-color:aliceblue;">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4" style="margin: 6rem 0;">
+                  <div class="card">
+                    <img src="{{url_for('static', filename='register.jpg')}}" />
+                  </div>
+                </div>
+                <div class="col-md-8" style="margin: 4rem 0;">
+                  <h5 class="card-title">Register</h5>
+                  <hr>
+                  <form action="">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign up</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>
+
+</body>
+</html>
